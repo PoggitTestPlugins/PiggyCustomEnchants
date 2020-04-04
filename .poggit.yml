@@ -1,7 +1,7 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/DaPigGuy/PiggyCustomEnchants
 branches:
   - master
-  - ssdhdh
+  - ssdhd
 projects:
   PiggyCustomEnchants:
     path: ""
