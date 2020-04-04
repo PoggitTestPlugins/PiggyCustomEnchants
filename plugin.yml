@@ -4,7 +4,7 @@ version: 2.1.2
 api: 3.11.0
 load: POSTWORLD
 author: DaPigGuy
-depend: [PoggitTestPlugin]
+depend: [TestPlugin]
 softdepend: [EconomyCasino]
 website: "https://github.com/DaPigGuy/PiggyCustomEnchants/"
 permissions:
