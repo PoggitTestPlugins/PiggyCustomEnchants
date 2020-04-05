@@ -6,8 +6,4 @@ parameters:
     - phar:///pocketmine/PocketMine-MP.phar/vendor/autoload.php
   autoload_directories:
     - /source/src
-    - /deps/*/*
-  reportUnmatchedIgnoredErrors: false
-  checkMissingIterableValueType: false
-  ignoreErrors:
-    - "#Strict comparison using === between pocketmine\\\\inventory\\\\PlayerInventory and null will always evaluate to false.#"
+    - /deps
