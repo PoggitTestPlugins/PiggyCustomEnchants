@@ -4,6 +4,7 @@ version: 2.1.2
 api: 3.11.0
 load: POSTWORLD
 author: DaPigGuy
+description: "Dont look..."
 website: "https://github.com/DaPigGuy/PiggyCustomEnchants/"
 permissions:
   piggycustomenchants:
