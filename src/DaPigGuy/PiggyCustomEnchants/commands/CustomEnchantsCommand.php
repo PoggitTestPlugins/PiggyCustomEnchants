@@ -36,7 +36,7 @@ class CustomEnchantsCommand extends BaseCommand
             return $subCommand->getName();
         }, $this->getSubCommands()));
         if ($sender instanceof Player && $this->plugin->areFormsEnabled()) {
-            $form = new SimpleForm(function (Player $player, ?int $data) use ($subcommands): void {
+            $form = new SimpleForm(1,2,function (Player $player, ?int $data) use ($subcommands): void {
                 if ($data !== null && isset($subcommands[$data])) {
                     $this->plugin->getServer()->dispatchCommand($player, "ce " . $subcommands[$data]);
                 }
@@ -54,7 +54,7 @@ class CustomEnchantsCommand extends BaseCommand
      */
     public function prepare(): void
     {
-        $this->registerSubCommand(new AboutSubCommand($this->plugin, "about", "Displays basic information about the plugin"));
+        $this->registerSubCommand(1,2,new AboutSubCommand($this->plugin, "about", "Displays basic information about the plugin"));
         $this->registerSubCommand(new EnchantSubCommand($this->plugin, "enchant", "Apply an enchantment on an item"));
         $this->registerSubCommand(new InfoSubCommand($this->plugin, "info", "Get info on a custom enchant"));
         $this->registerSubCommand(new ListSubCommand($this->plugin, "list", "Lists all registered custom enchants"));
